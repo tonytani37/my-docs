@@ -1,0 +1,13 @@
+site_name: ドキュメント一覧
+# site_url: https://www.yahoo.com/      # サイトのベースURL (任意)
+
+# サイトのナビゲーション（目次/メニュー）を定義
+nav:
+    - Home: index.md       # docs/index.md にリンク
+    - API:
+        - SpicySessions: api/spicysessions_api_readme.md # docs/guide/setup.md にリンク
+        - microCMS: api\cms_api_readme.md
+    - Front:
+        - football_info: front\football_info_readme.md
+        - SpicySessions: front/spicysessions_readme.md
+        - 架空キャンプ場サイト: front\web-test_readme.md
