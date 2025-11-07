@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>football_info - ドキュメント一覧</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">ドキュメント一覧</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">API</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../api/spicysessions_api_readme/" class="dropdown-item">SpicySessions</a>
+</li>
+                                    
+<li>
+    <a href="../../api/cms_api_readme/" class="dropdown-item">microCMS</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Front</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">football_info</a>
+</li>
+                                    
+<li>
+    <a href="../spicysessions_readme/" class="dropdown-item">SpicySessions</a>
+</li>
+                                    
+<li>
+    <a href="../web-test_readme/" class="dropdown-item">架空キャンプ場サイト</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../api/cms_api_readme/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../spicysessions_readme/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#20250915" class="nav-link">アメフトチームの情報を検索できるサイトを立ち上げました。2025/09/15</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_1" class="nav-link">再利用に関する重要な注意</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">再利用時のポイント</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#json" class="nav-link">jsonファイル仕様</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">データ仕様書</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#playersjson" class="nav-link">📄 players.json</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#teamsjson" class="nav-link">📄 teams.json</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="20250915">アメフトチームの情報を検索できるサイトを立ち上げました。2025/09/15</h1>
+<p>広くアメフトを愛する人々が自分の出身校に限らず、眼の前で活躍している選手に関する情報を素早く簡単に知ることができればいいなと思いつき、生成AIの全面協力と中四国学生アメリカンフットボール連盟発行の公式イヤーブック（試合会場で無料配布）をもとに取りあえず動くものを作りました。</p>
+<p>選手並びにチームに関するデータはすべてく公式イヤーブック記載のものを利用しています。</p>
+<p>データ化にあたり、生成AIの写真からの文字起こし機能を利用していますので、その読み取り処理時に間違った情報へ変換されている可能性があることをご了承ください。</p>
+<p>チームや選手情報はデータベースで管理したほうが何かと便利な気もしますが、APIを準備しそれとの連携を行う場合、アクセス処理に時間がかかることがあり、なによりスタンドで素早く確認することを目的としているため、参照用ファイルはすべて内部に持っています（JSONファイルの仕様は下記）</p>
+<p>画面はPC,スマホ両方でそれなりに利用可能ですが、どちらかといえばスマホ向きにデザインしています。現在の一般的なスマホの画面サイズ以外（特に小さい場合）は、画面デザインが崩れる事があるかもしれません。</p>
+<p>チームと選手の関連は日本語のチーム名に依存しています。本来はもっと正規化しておくべきでしょうが、今回は動くことを第一義とし思いつくままにコードを修正していたので、メンテナンスや流用の容易性などはフル無視です。</p>
+<h2 id="_1">再利用に関する重要な注意</h2>
+<ul>
+<li>ソースは連絡なく自由に再利用可能ですが、権利はすべて本リポジトリ作成者（以下、本作成者）にあります。</li>
+<li>これらソースその他を再利用することで発生する問題その他について本作成者は一切の責任を負いません。再利用は自己責任でお願いします。</li>
+</ul>
+<h2 id="_2">再利用時のポイント</h2>
+<ul>
+<li>データは以下のようなjsonファイルですので、これらを差し替えれば他の地区でも使用できます。</li>
+<li>その場合、キー項目以外の不要な項目は""と設定されていてもごくはずです。</li>
+<li>ただしブロック制がない地区等、多少の修正が必要がある場合も考えられます。（その他含めて未評価なので動かなかったらデバッグして動くようにしてください）</li>
+</ul>
+<pre><code>例）index.htmlの&lt;select id=&quot;division&quot;〜&gt;部分の&lt;option&gt;タグを  &lt;option value=&quot;&quot; selected&gt;ブロック指定&lt;/option&gt; 以外をhidden属性すればとりあえ
+ず動きます。
+</code></pre>
+<ul>
+<li>サイトのロゴマークは勝手に作っていますので、適宜画像データを差し替えてください。</li>
+<li>チームのマークはチーム名（日本語）と連携させてベタで定義していますので、画像ファイルの準備とともに対応テーブルの修正もお願いします。（修正していないと灰色の箱が出てくるはずです）</li>
+</ul>
+<h1 id="json">jsonファイル仕様</h1>
+<h2 id="_3">データ仕様書</h2>
+<h2 id="playersjson">📄 players.json</h2>
+<ul>
+<li><strong>概要</strong>: 各選手の基本情報を格納する</li>
+</ul>
+<h3 id="_4">フィールド仕様</h3>
+<table>
+<thead>
+<tr>
+<th>フィールド名</th>
+<th>型</th>
+<th>説明</th>
+<th>例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td>string</td>
+<td>選手固有のID</td>
+<td><code>"1"　特に制限なし。重複しても問題なし（未使用）</code></td>
+</tr>
+<tr>
+<td><code>division</code></td>
+<td>string</td>
+<td>所属ディビジョン</td>
+<td><code>"A"</code></td>
+</tr>
+<tr>
+<td><code>team</code></td>
+<td>string</td>
+<td>所属チーム名</td>
+<td><code>"広島大学"</code></td>
+</tr>
+<tr>
+<td><code>number</code></td>
+<td>string</td>
+<td>背番号</td>
+<td><code>"0"</code></td>
+</tr>
+<tr>
+<td><code>position</code></td>
+<td>string</td>
+<td>ポジション</td>
+<td><code>"WR/LB"</code></td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>string</td>
+<td>氏名</td>
+<td><code>"大島 竣太"</code></td>
+</tr>
+<tr>
+<td><code>grade</code></td>
+<td>string</td>
+<td>学年</td>
+<td><code>"2"</code></td>
+</tr>
+<tr>
+<td><code>height</code></td>
+<td>string</td>
+<td>身長（cm）</td>
+<td><code>"170"</code></td>
+</tr>
+<tr>
+<td><code>weight</code></td>
+<td>string</td>
+<td>体重（kg）</td>
+<td><code>"83"</code></td>
+</tr>
+<tr>
+<td><code>almaMater</code></td>
+<td>string</td>
+<td>出身高校</td>
+<td><code>"静岡聖光学院"</code></td>
+</tr>
+<tr>
+<td><code>highSchoolClubActivities</code></td>
+<td>string</td>
+<td>高校時代の部活動</td>
+<td><code>"ラグビー"</code></td>
+</tr>
+<tr>
+<td><code>captain</code></td>
+<td>string</td>
+<td>主将等の役職（空文字可）</td>
+<td><code>"主将"</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="teamsjson">📄 teams.json</h2>
+<ul>
+<li><strong>概要</strong>: 各大学チームの基本情報を格納する</li>
+</ul>
+<h3 id="_5">フィールド仕様</h3>
+<table>
+<thead>
+<tr>
+<th>フィールド名</th>
+<th>型</th>
+<th>説明</th>
+<th>例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td>string</td>
+<td>チーム固有のID</td>
+<td><code>"t1"　特に制限なし。重複しても問題なし（未使用）</code></td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>string</td>
+<td>チーム名</td>
+<td><code>"広島大学"</code></td>
+</tr>
+<tr>
+<td><code>division</code></td>
+<td>string</td>
+<td>所属ディビジョン</td>
+<td><code>"A"</code></td>
+</tr>
+<tr>
+<td><code>city</code></td>
+<td>string</td>
+<td>所在地（市区町村）</td>
+<td><code>"広島県東広島市"</code></td>
+</tr>
+<tr>
+<td><code>founded</code></td>
+<td>number</td>
+<td>創部年</td>
+<td><code>1977</code></td>
+</tr>
+<tr>
+<td><code>nickname</code></td>
+<td>string</td>
+<td>チーム愛称</td>
+<td><code>"ラクーンズ"</code></td>
+</tr>
+<tr>
+<td><code>coach</code></td>
+<td>string</td>
+<td>監督名</td>
+<td><code>"猪 凌太郎"</code></td>
+</tr>
+<tr>
+<td><code>color</code></td>
+<td>string</td>
+<td>チームカラー（複数可）</td>
+<td><code>"ブラック/ホワイト"</code></td>
+</tr>
+</tbody>
+</table>
+<hr /></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

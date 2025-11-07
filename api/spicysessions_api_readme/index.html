@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>SpicySessions - ドキュメント一覧</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">ドキュメント一覧</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">API</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">SpicySessions</a>
+</li>
+                                    
+<li>
+    <a href="../cms_api_readme/" class="dropdown-item">microCMS</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Front</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../front/football_info_readme/" class="dropdown-item">football_info</a>
+</li>
+                                    
+<li>
+    <a href="../../front/spicysessions_readme/" class="dropdown-item">SpicySessions</a>
+</li>
+                                    
+<li>
+    <a href="../../front/web-test_readme/" class="dropdown-item">架空キャンプ場サイト</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../.." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../cms_api_readme/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#mongodb-sessions-api" class="nav-link">📚 MongoDB Sessions API 技術ドキュメント</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#1-overview" class="nav-link">1. 概要 (Overview) 🚀</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#2-setup" class="nav-link">2. 環境構築と依存関係 (Setup) 🛠️</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#3-api-endpoints" class="nav-link">3. APIエンドポイント (Endpoints) 🎯</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#4-architecture" class="nav-link">4. アプリケーションの構成要素 (Architecture) 🏗️</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#5-data-schema" class="nav-link">5. データスキーマ (Data Schema) 💾</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="mongodb-sessions-api">📚 MongoDB Sessions API 技術ドキュメント</h1>
+<h2 id="1-overview">1. 概要 (Overview) 🚀</h2>
+<p>本APIは、Pythonの<strong>FastAPI</strong>フレームワークと非同期MongoDBドライバー**<code>motor</code>**を使用して構築されています。主な目的は、MongoDBデータベースに保存されている「Spicy Sessions」番組のセッション曲情報を取得し、JSON形式でクライアントに提供することです。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">項目</th>
+<th style="text-align: left;">詳細</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>フレームワーク</strong></td>
+<td style="text-align: left;">FastAPI</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>データベース</strong></td>
+<td style="text-align: left;">MongoDB</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ドライバー</strong></td>
+<td style="text-align: left;"><code>motor</code> (非同期)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>主な機能</strong></td>
+<td style="text-align: left;">全セッションデータの取得</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>アクセス制限</strong></td>
+<td style="text-align: left;">CORSによるアクセス制御あり（開発環境では<code>*</code>で全許可）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2-setup">2. 環境構築と依存関係 (Setup) 🛠️</h2>
+<h3 id="21-requirementstxt">2.1. 必要なライブラリ (<code>requirements.txt</code>)</h3>
+<p>アプリケーションの実行に必要な依存関係は以下の通りです。</p>
+<pre><code class="language-txt">fastapi
+uvicorn[standard] # ASGIサーバー
+motor             # 非同期MongoDBドライバー
+pydantic          # データモデルと検証
+python-dotenv     # 環境変数のロード
+</code></pre>
+<h3 id="22-env">2.2. 環境変数 (.env)</h3>
+<p>MongoDBへの接続情報は、セキュリティのため環境変数として設定する必要があります。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">変数名</th>
+<th style="text-align: left;">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>MONGODB_URI</code></td>
+<td style="text-align: left;">MongoDBの接続文字列（URI）。<code>db.py</code>で利用されます。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="23">2.3. 実行コマンド</h3>
+<p>アプリケーションをローカルで起動するには、Uvicornを使用します。</p>
+<pre><code class="language-bash">uvicorn main:app --reload
+</code></pre>
+<hr />
+<h2 id="3-api-endpoints">3. APIエンドポイント (Endpoints) 🎯</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">メソッド</th>
+<th style="text-align: left;">パス</th>
+<th style="text-align: left;">概要</th>
+<th style="text-align: left;">レスポンスモデル</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>GET</code></td>
+<td style="text-align: left;"><code>/</code></td>
+<td style="text-align: left;">APIの稼働状況（ヘルスチェック）を確認します。</td>
+<td style="text-align: left;"><code>{"message": "MongoDB Sessions API is running."}</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>GET</code></td>
+<td style="text-align: left;"><code>/songs</code></td>
+<td style="text-align: left;">MongoDBに保存されている全てのセッション曲情報を取得します。</td>
+<td style="text-align: left;"><code>List[SpicySession]</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="31-songs">3.1. <code>/songs</code>エンドポイント</h3>
+<ul>
+<li><strong>機能</strong>: MongoDBの指定されたコレクションから全てのドキュメントを取得し、Pydanticモデルに基づいてJSONに変換して返します。</li>
+<li><strong>レスポンススキーマ</strong>: <code>models.py</code>で定義されている<code>SpicySession</code>モデルに基づきます。</li>
+</ul>
+<hr />
+<h2 id="4-architecture">4. アプリケーションの構成要素 (Architecture) 🏗️</h2>
+<h3 id="41-mainpy-fastapi-application">4.1. <code>main.py</code> (FastAPI Application)</h3>
+<p>FastAPIの<strong>コアロジック</strong>と<strong>ルーティング</strong>を担います。</p>
+<ul>
+<li><strong>ライフサイクル管理</strong>:<ul>
+<li><code>@app.on_event("startup")</code>: アプリケーション起動時に<code>db.connect_to_mongo()</code>を呼び出し、DB接続を確立します。</li>
+<li><code>@app.on_event("shutdown")</code>: アプリケーション終了時に<code>db.close_mongo_connection()</code>を呼び出し、DB接続を安全に閉じます。</li>
+</ul>
+</li>
+<li><strong>ミドルウェア</strong>: <code>CORSMiddleware</code>を設定し、クロスオリジンリクエストを許可しています（現在の設定は<code>allow_origins=["*"]</code>で<strong>全許可</strong>）。</li>
+<li><strong>ルーティング</strong>: <code>/</code>と<code>/songs</code>エンドポイントを定義し、<code>/songs</code>では<code>db.get_all_sessions()</code>を呼び出します。</li>
+</ul>
+<h3 id="42-dbpy-database-layer">4.2. <code>db.py</code> (Database Layer)</h3>
+<p>MongoDBへの<strong>接続</strong>と<strong>データアクセス層</strong>を担います。</p>
+<ul>
+<li><strong>接続</strong>: <code>motor.motor_asyncio.AsyncIOMotorClient</code>を使用し、非同期で接続を行います。</li>
+<li><strong>設定</strong>: 接続URI、データベース名 (<code>spicy_sessions_db</code>)、コレクション名 (<code>songs</code>) を環境変数や定数から取得します。</li>
+<li><strong>データ取得関数</strong>: <code>async def get_all_sessions()</code>が非同期処理でコレクション全体をスキャンし、<code>motor</code>のカーソルから全ドキュメントをリストとして返します。</li>
+</ul>
+<h3 id="43-modelspy-pydantic-models">4.3. <code>models.py</code> (Pydantic Models)</h3>
+<p>データの<strong>スキーマ定義</strong>と<strong>検証</strong>を担います。</p>
+<ul>
+<li><strong><code>SessionInfo</code></strong>: セッション曲ごとの詳細情報（<code>セッション曲</code>, <code>オリジナル</code>, <code>歌唱</code>, <code>演奏者</code>）を定義します。</li>
+<li><strong><code>SpicySession</code></strong>: メインの放送回情報と、<code>セッション情報</code>リスト（<code>SessionInfo</code>のリスト）を定義します。<ul>
+<li><strong>MongoDB対応</strong>: <code>PyObjectId</code>カスタム型と<code>json_encoders = {ObjectId: str}</code>を設定することで、MongoDBの特殊な<code>ObjectId</code>をJSONの文字列形式に<strong>自動変換</strong>し、クライアントが扱いやすい形式に整形します。</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="5-data-schema">5. データスキーマ (Data Schema) 💾</h2>
+<p><code>/songs</code>エンドポイントで返されるJSONデータの構造（<code>SpicySession</code>モデル）は以下の通りです。</p>
+<pre><code class="language-json">[
+  {
+    &quot;id&quot;: &quot;60c0f9b6...&quot;, // MongoDBの_id (文字列に変換)
+    &quot;回&quot;: 1,
+    &quot;放送日&quot;: &quot;2023年12月16日&quot;,
+    &quot;放送時間&quot;: &quot;土曜日 23:00 - 24:00&quot;,
+    &quot;放送タイトル&quot;: &quot;Spicy Sessions with 平原綾香&quot;,
+    &quot;カレー&quot;: &quot;特製チキンカレー&quot;,
+    &quot;参考&quot;: &quot;　&quot;,
+    &quot;link&quot;: &quot;...&quot;,
+    &quot;space&quot;: &quot;...&quot;,
+    &quot;セッション情報&quot;: [
+      {
+        &quot;セッション曲&quot;: &quot;からっぽのハート&quot;,
+        &quot;オリジナル&quot;: &quot;平原綾香&quot;,
+        &quot;歌唱&quot;: &quot;平原綾香&quot;,
+        &quot;演奏者&quot;: &quot;大貫祐一郎(Piano)&quot;
+      }
+      // ... 他のセッション曲
+    ]
+  }
+  // ... 他の放送回
+]
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
